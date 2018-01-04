@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NetStandardPort-System.Workflow.Activities.Rules.Design</id>
+    <version>4.4.0-preview03</version>
+    <title>NetStandardPort-System.Workflow.Activities.Rules.Design</title>
+    <authors>BlaiseD</authors>
+    <owners>BlaiseD</owners>
+    <licenseUrl>https://github.com/BlaiseD/WFRulesToNetStandard/blob/master/Licence.MD</licenseUrl>
+    <projectUrl>https://github.com/BlaiseD/WFRulesToNetStandard</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package provides the RuleSetDialog compatible with System.Workflow.Activities.Rules for .NetStandard.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright © Microsoft 2017</copyright>
+    <tags>rules editing serialization</tags>
+  </metadata>
+</package>

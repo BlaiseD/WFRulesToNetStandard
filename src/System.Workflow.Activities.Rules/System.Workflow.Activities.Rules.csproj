@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>System.Workflow.Activities</RootNamespace>
+    <PackageId>NetStandardPort-System.Workflow.Activities.Rules</PackageId>
+    <PackageVersion>4.4.0-preview03</PackageVersion>
+    <Authors>BlaiseD</Authors>
+    <Description>Updates System.Workflow.Activities.Rules to bring the RuleEngine functionality to .NetStandard projects.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageTags>rules serialization</PackageTags>
+    <Copyright>Copyright © Microsoft 2017</Copyright>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <FileVersion>4.4.0.0</FileVersion>
+    <RepositoryUrl>https://github.com/BlaiseD/WFRulesToNetStandard</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/BlaiseD/WFRulesToNetStandard/blob/master/Licence.MD</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetStandardPort-System.Workflow.ComponentModel.Serialization" Version="4.4.0-preview03" />
+    <PackageReference Include="System.CodeDom" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Messages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Update="StringResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="StringResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

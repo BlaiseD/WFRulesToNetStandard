@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>NetStandardPort-System.Workflow.ComponentModel.Serialization</PackageId>
+    <PackageVersion>4.4.0-preview03</PackageVersion>
+    <Authors>BlaiseD</Authors>
+    <RootNamespace>System.Workflow</RootNamespace>
+    <Description>Updates WorkflowMarkupSerializer to allow serialization of rule sets in .NetStandard projects.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageTags>rules serialization</PackageTags>
+    <Copyright>Copyright © Microsoft 2017</Copyright>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <FileVersion>4.4.0.0</FileVersion>
+    <RepositoryUrl>https://github.com/BlaiseD/WFRulesToNetStandard</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/BlaiseD/WFRulesToNetStandard/blob/master/Licence.MD</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ComponentModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetStandardPort-System.ComponentModel.Design.Serialization" Version="4.4.0-preview03" />
+    <PackageReference Include="System.CodeDom" Version="4.4.0" />
+  </ItemGroup>
+
+</Project>
